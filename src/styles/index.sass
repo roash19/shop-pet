@@ -1,0 +1,376 @@
+@import 'reset'
+@import 'fonts'
+
+$font-weight: 400
+$font-size: 16px
+$line-height: 1 !important
+$font-family: 'Roboto'
+$color: #bfbfbf
+
+body
+  color: $color
+  font: $font-weight $font-size $font-family, Arial, sans-serif
+  background: #1a1a1a
+  min-height: 100vh
+
+
+/* MAIN STYLES */
+/* ================================================ */
+.container-fluid
+  max-width: 100%
+
+.container
+  width: 100%
+  max-width: 1110px
+  margin: auto
+
+img
+  display: block
+  max-width: 100%
+
+button, input, textarea, select
+  outline: none
+
+button
+  padding: 0
+  border: none
+  cursor: pointer
+
+*
+  box-sizing: border-box
+
+select
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+
+.d-flex
+  display: flex
+
+.align-center
+  align-items: center
+
+.justify-between
+  justify-content: space-between
+
+.pos-rel
+  position: relative
+
+.text-default
+  color: #a6a6a6
+  font-family: "Roboto Medium"
+  font-size: 14px
+  font-weight: 500
+
+.text-overflow
+  overflow: hidden
+  -ms-text-overflow: ellipsis
+  text-overflow: ellipsis
+  white-space: nowrap
+
+.logo
+  color: #d9d9d9
+  font-family: Roboto
+  font-size: 22px
+  font-weight: 900
+  letter-spacing: 1.65px
+  text-transform: uppercase
+  text-decoration: none
+
+
+.social-block
+  display: flex
+  align-items: center
+  &__link
+    display: block
+    width: 30px
+    height: 30px
+    margin-left: 10px
+    &_facebook
+      background: url("../images/facebook_icon.svg") center center no-repeat
+    &_twitter
+      background: url("../images/twitter_icon.svg") center center no-repeat
+    &_instagram
+      background: url("../images/instagram_icon.svg") center center no-repeat
+    &_youtube
+      background: url("../images/youtube_icon.svg") center center no-repeat
+
+
+
+/* HEADER STYLES */
+/* ================================================ */
+.header
+  height: 180px
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+  border-radius: 6px
+  background-color: #252525
+
+.header-top
+  border-bottom: 2px solid #303030
+  &__container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 35px 0
+  &__logo
+    margin-left: 65px
+
+.header-search
+  width: 381px
+  height: 50px
+  display: flex
+  border-radius: 4px
+  border: 2px solid #303030
+  background-color: #262626
+  &__input
+    flex-grow: 1
+    height: 100%
+    padding: 0 25px
+    background-color: transparent
+    border: none
+    color: #d9d9d9
+    font-family: 'Roboto'
+    font-size: 12px
+    font-weight: 700
+    line-height: 50px
+    &::placeholder
+      color: #808080
+  &__select
+    height: 100%
+    padding: 0 42px 0 25px
+    background-color: transparent
+    border: none
+    color: #737373
+    font-family: 'Roboto'
+    font-size: 10px
+    font-weight: 900
+    letter-spacing: 1.25px
+    text-transform: uppercase
+    cursor: pointer
+
+  .select-wrapper
+    border-left: 2px solid #303030
+    position: relative
+    &:after
+      content: ''
+      display: block
+      width: 8px
+      height: 6px
+      background: url("../images/arrow_13px_icon.svg")  center center no-repeat
+      background-size: 8px 6px
+      position: absolute
+      top: 20px
+      right: 25px
+
+
+.header-user-panel
+  display: flex
+  align-items: center
+  &__item
+    display: flex
+    align-items: center
+    height: 50px
+    padding: 0 15px
+    cursor: pointer
+    transition: all 0.3s ease
+    &:hover
+      color: #d9d9d9
+  &__icon
+    margin-right: 15px
+
+
+.header-bottom
+  display: flex
+  height: 58px
+
+.header-categories
+  width: 215px
+  padding-left: 27px
+  &__img
+    margin-right: 21px
+  &__text
+    flex-grow: 1
+
+.header-types
+  display: flex
+  padding: 0 40px
+  border-left: 3px solid #303030
+  &__link
+    height: 100%
+    display: flex
+    align-items: center
+    padding: 0 17px
+    text-decoration: none
+    transition: all 0.3s ease
+    &:hover
+      color: #d9d9d9
+
+.header-bottom-select
+  display: flex
+  align-items: center
+  border-left: 3px solid #303030
+  padding: 0 25px
+  cursor: pointer
+  &__text
+    margin-right: 10px
+    color: #737373
+  &__img
+    margin-top: 2px
+
+
+
+/* FOOTER STYLES */
+/* ================================================ */
+.footer
+  background-color: #252525
+
+.footer-top
+  padding: 50px 0
+  border-bottom: 2px solid #303030
+  &__container
+    display: flex
+    justify-content: space-between
+
+.footer-nav
+  display: flex
+  align-items: center
+  &__item
+    padding: 0 20px
+  &__link
+    padding: 5px 10px
+    color: #bfbfbf
+    font-family: "Roboto Medium"
+    font-size: 16px
+    font-weight: 500
+    text-decoration: none
+    transition: all 0.3s ease
+    &:hover
+      color: #d9d9d9
+
+
+.footer-bottom
+  &__container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 45px 0
+
+.footer-copyright
+  display: flex
+  &__text
+    padding: 5px 0
+    color: #737373
+  &__link
+    padding: 5px 0
+    color: #737373
+    margin-left: 30px
+    text-decoration: none
+    transition: all 0.3s ease
+    &:hover
+      color: #d9d9d9
+
+
+.footer-payment
+  display: flex
+  align-items: center
+
+.payment-card
+  display: flex
+  margin-left: 40px
+  &__item
+    margin-left: 10px
+
+
+
+/* NEW_PRODUCTS STYLES */
+/* ================================================ */
+.products-news
+  display: flex
+  justify-content: space-between
+  margin-top: 30px
+  margin-bottom: 30px
+
+.news-sales
+  width: 350px
+  display: flex
+  flex-direction: column
+  align-items: center
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+  border-radius: 6px
+  background-color: #252525
+  padding: 30px 30px 20px
+  text-decoration: none
+  transition: all 0.2s linear
+  &:hover
+    transform: scale(1.05)
+  &__title
+    font-size: 20px
+    line-height: 60px
+  &__subtitle
+    color: #bfbfbf
+    font-family: "Roboto Medium"
+    font-size: 14px
+    font-weight: 500
+    line-height: 30px
+  &__img-wrapper
+    width: 200px
+    height: 175px
+    margin-top: 15px
+  &__img
+    margin: auto
+
+
+.news-commercial
+  width: 350px
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  text-align: center
+  padding: 30px 75px
+  border-radius: 6px
+  text-decoration: none
+  transition: all 0.2s linear
+  &:hover
+    transform: scale(1.05)
+  &__title
+    color: #ffffff
+    font-family: "Roboto Medium"
+    font-size: 20px
+    font-weight: 500
+    line-height: 30px
+  &__subtitle
+    opacity: 0.3
+    color: #ffffff
+    font-family: "Roboto Medium"
+    font-size: 14px
+    font-weight: 500
+    line-height: 60px
+
+
+.news-new-product
+  width: 350px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.new-product
+  width: 100%
+  height: 150px
+  display: flex
+  align-items: center
+  padding: 30px
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+  border-radius: 6px
+  background-color: #252525
+  text-decoration: none
+  transition: all 0.2s linear
+  &__img-wrapper
+    width: 90px
+    height: 90px
+    margin-right: 40px
+  &__img
+    margin: auto
+  &__text-wrapper
+    line-height: 30px
+  &:hover
+    transform: scale(1.05)
