@@ -1,17 +1,15 @@
 import React from 'react';
-import cart from '../../images/shopping_cart_icon.svg';
-import heart from '../../images/heart_icon.svg';
 import user from '../../images/account_icon.svg';
 
 const HeaderUserPanel = () => {
     return (
         <ul className="header-user-panel">
             <li className="header-user-panel__item text-default">
-                <img className="header-user-panel__icon" src={cart} alt="You cart"/>
+                <i className="shopping-cart-btn header-user-panel__icon"/>
                 2 Items
             </li>
             <li className="header-user-panel__item text-default">
-                <img className="header-user-panel__icon" src={heart} alt="You wish"/>
+                <i className="favorite-btn header-user-panel__icon"/>
                 Wish List
             </li>
             <li className="header-user-panel__item text-default">
